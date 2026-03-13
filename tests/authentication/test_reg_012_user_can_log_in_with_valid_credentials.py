@@ -7,6 +7,7 @@ from config import LOGIN_EMAIL, LOGIN_PASSWORD
 
 
 @pytest.mark.regression
+@pytest.mark.smoke
 def test_reg_012_user_can_log_in_with_valid_credentials(home_page: Page):
     """Valid credentials log user in and redirect to account dashboard."""
     page = home_page

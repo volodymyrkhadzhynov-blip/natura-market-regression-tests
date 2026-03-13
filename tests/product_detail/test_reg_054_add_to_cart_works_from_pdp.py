@@ -4,6 +4,7 @@ from playwright.sync_api import Page
 
 
 @pytest.mark.regression
+@pytest.mark.smoke
 def test_reg_054_add_to_cart_works_from_pdp(home_page: Page):
     """Add to Cart adds product and shows confirmation."""
     page = home_page

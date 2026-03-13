@@ -6,6 +6,7 @@ from config import BASE_URL
 
 
 @pytest.mark.regression
+@pytest.mark.smoke
 def test_reg_038_category_page_displays_product_tiles(home_page: Page):
     """Category page shows product grid with image, title, price."""
     page = home_page

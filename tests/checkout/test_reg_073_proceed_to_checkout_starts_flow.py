@@ -7,6 +7,7 @@ from tests.helpers import add_product_and_go_to_cart
 
 
 @pytest.mark.regression
+@pytest.mark.smoke
 def test_reg_073_proceed_to_checkout_starts_flow(home_page: Page):
     """Proceed to Checkout opens checkout."""
     add_product_and_go_to_cart(home_page)

@@ -7,6 +7,7 @@ from tests.helpers import add_product_to_cart
 
 
 @pytest.mark.regression
+@pytest.mark.smoke
 def test_reg_064_user_can_open_full_cart_page(home_page: Page):
     """Cart page is accessible after adding a product."""
     add_product_to_cart(home_page)

@@ -4,6 +4,7 @@ from playwright.sync_api import Page
 
 
 @pytest.mark.regression
+@pytest.mark.smoke
 def test_reg_050_pdp_displays_essential_product_info(home_page: Page):
     """PDP shows title, image, price, Add to Cart."""
     page = home_page

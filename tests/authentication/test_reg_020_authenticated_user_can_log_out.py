@@ -6,6 +6,7 @@ from pages.header import Header
 
 
 @pytest.mark.regression
+@pytest.mark.smoke
 def test_reg_020_authenticated_user_can_log_out(logged_in_page: Page):
     """Log Out closes session and returns to guest state."""
     page = logged_in_page

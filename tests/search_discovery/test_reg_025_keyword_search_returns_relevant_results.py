@@ -6,6 +6,7 @@ from pages.header import Header
 
 
 @pytest.mark.regression
+@pytest.mark.smoke
 def test_reg_025_keyword_search_returns_relevant_results(home_page: Page):
     """Search by keyword returns results page or no-results message."""
     page = home_page
