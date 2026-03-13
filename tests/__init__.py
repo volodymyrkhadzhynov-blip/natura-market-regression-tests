@@ -1,0 +1,1 @@
+"""Natura Market regression tests."""
